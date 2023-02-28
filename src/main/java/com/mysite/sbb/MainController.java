@@ -4,9 +4,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public class MainController {
 
-    @GetMapping("/sbb")
-    public void index()
+    @GetMapping("/")
+    public String root()
     {
-        System.out.println("index");
+        return "redirect:/question/list";
     }
 }
